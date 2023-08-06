@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="admin.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <title>Admin_home</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+ </head>
+ <body style="background-image: url('1.gif'); background-size: cover">
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo"><i class="material-icons" style="font-size:36px;">supervisor_account</i>&nbsp;  ADMIN</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="../index.html">Home</a></li>
+         <li class="services">
+           <a href="admin_patient_details.html">Patient</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a href="admin_patient_details.html">Details </a></li>
+             <li><a href="admin_patient_prescriptions.html">Prescriptions</a></li>
+             <li><a href="admin_patient_bills.html">Bills</a></li>
+           </ul>
+           <li class="services">
+            <a href="admin_doctor_details.html">Doctor</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="admin_doctor_details.html">Details </a></li>
+              <li><a href="admin_doctor_patientscured.html">Patients Cured</a></li>
+            </ul>
+            <li class="services">
+            <a href="admin_records_deaths.html">Records</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="admin_redcords_deaths.html">Deaths </a></li>
+              <li><a href="admin_records_disease.html">Diseases</a></li>
+            </ul>
+            <li><a href="admin_contact.html">Contact</a></li>
+         </li>
+     </ul>
+   </nav><br>
+  <p> &nbsp; &nbsp; &nbsp; <input style="align-self: center;" id="myInput" type="text" placeholder=" Search.."></p>
+<br><br>
+
+<table style="margin: auto, background-color=#009879">
+  <thead>
+  <tr>
+    <th>Patient Id</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Weight</th>
+    <th>Blood Group</th>
+    <th>City</th>
+    <th>Date of Birth</th>
+    <th>Gender</th>
+  </tr>
+  </thead>
+  <tbody >
+  <tr>
+    <td>P611</td>
+    <td>Abhishek</td>
+    <td>M</td>
+    <td>51</td>
+    <td>O+</td>
+    <td>Chennai</td>
+    <td>01-Jan-02</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>P612</td>
+    <td>Koushik</td>
+    <td>Garapati</td>
+    <td>52</td>
+    <td>O-</td>
+    <td>Mumbai</td>
+    <td>02-Feb-02</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>P613</td>
+    <td>Priya</td>
+    <td>Reddy</td>
+    <td>53</td>
+    <td>O+</td>
+    <td>Tirupathi</td>
+    <td>31-Dec-02</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>P614</td>
+    <td>Shivesh</td>
+    <td>s</td>
+    <td>54</td>
+    <td>A+</td>
+    <td>Mysore</td>
+    <td>04-Mar-02</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>P615</td>
+    <td>Sruthi</td>
+    <td>Sathi</td>
+    <td>55</td>
+    <td>B+</td>
+    <td>Bangalore</td>
+    <td>05-May-02</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>P616</td>
+    <td>Uday</td>
+    <td>Venkat</td>
+    <td>56</td>
+    <td>AB+</td>
+    <td>Cochi</td>
+    <td>06-Jun-02</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>P617</td>
+    <td>Sahasra</td>
+    <td>Lakshmi</td>
+    <td>57</td>
+    <td>O+</td>
+    <td>Hyderabad</td>
+    <td>07-Jul-02</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>P618</td>
+    <td>Meghana</td>
+    <td>pullela</td>
+    <td>58</td>
+    <td>O-</td>
+    <td>Hyderabad</td>
+    <td>08-Aug-02</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>P619</td>
+    <td>Parthu</td>
+    <td>Sardhi</td>
+    <td>58</td>
+    <td>AB+</td>
+    <td>Mumbai</td>
+    <td>09-Jan-02</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>P620</td>
+    <td>Kudan</td>
+    <td>Buggan</td>
+    <td>56</td>
+    <td>O+</td>
+    <td>Bhopal</td>
+    <td>11-Mar-02</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>P621</td>
+    <td>Pranathi</td>
+    <td>Buggana</td>
+    <td>56</td>
+    <td>O+</td>
+    <td>Bhopal</td>
+    <td>01-Mar-02</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>P622</td>
+    <td>Harika</td>
+    <td>Reddy</td>
+    <td>55</td>
+    <td>B+</td>
+    <td>Amaravathi</td>
+    <td>12-Jan-02</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>P623</td>
+    <td>Nirmala</td>
+    <td>Devi</td>
+    <td>54</td>
+    <td>AB+</td>
+    <td>Srinagar</td>
+    <td>13-Dec-02</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>P624</td>
+    <td>Lohit</td>
+    <td>Veera</td>
+    <td>53</td>
+    <td>O+</td>
+    <td>Chadhigarh</td>
+    <td>14-Mar-02</td>
+    <td>M</td>
+  </tr>
+  <tr>
+    <td>P625</td>
+    <td>Chathurya</td>
+    <td>Kasi</td>
+    <td>52</td>
+    <td>O-</td>
+    <td>Bangalore</td>
+    <td>15-Jun-02</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>P626</td>
+    <td>Himankar</td>
+    <td>Sai</td>
+    <td>51</td>
+    <td>A+</td>
+    <td>Coimbatore</td>
+    <td>16-Nov-02</td>
+    <td>M</td>
+  </tr>
+  </tbody>
+</table>
+    </div>
+ </body>
+</html>
