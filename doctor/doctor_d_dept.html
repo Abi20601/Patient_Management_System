@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="doctor.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <title>Department</title>
+ </head>
+ <body style="background-image: url('3.gif'); background-size: cover">
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo"><i class="material-icons" style="font-size:36px;">local_hospital</i>&nbsp;  Doctor</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="doctor_medical_rec.html">Patient Record</a></li>
+         <li><a href="doctor_test.html">Tests</a></li>
+         <li class="services">
+            <a href="doctor_d_dept.html">Department</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="doctor_d_dept.html">Department</a></li>
+              <li><a href="doctor_d_desig.html">Designation</a></li>
+              <li><a href="doctor_d_details.html">Details</a></li>
+            </ul>
+         <li><a href="doctor_contact.html">Contact</a></li>
+   </nav><br>
+   <div class="form-container" >
+    <h3>Doctor's Department</h3><br>  
+    <form action="/action_page.php">
+        <label for="DeptName">Department Name : </label>
+        <input type="text" id="DeptName" name="DeptName" value=""><br>
+        <label for="Deptno">Department Contact No : </label>
+        <input type="text" id="Deptno" name="Deptno" value=""><br>
+        <label for="hdd">Department head doctor : </label>
+        <input type="text" id="hdd" name="headdoctor" value=""><br><br>
+        <a href="end.html"><input type="button" value="Submit"></a>
+    </form> 
+   </div>
+ </body>
+</html>

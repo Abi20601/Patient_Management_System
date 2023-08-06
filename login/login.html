@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<title>Login</title>
+	<script type = "text/javascript">
+		function Redirect() {
+		 var user = document.getElementById("userid").value;
+		 var pass= document.getElementById("password").value;
+		 if( user=="admin" && pass=="admin" ) {
+			redirect1()
+		 } else if (user=="patient" && pass=="patient" ) {
+			redirect2()
+		 } else if (user=="doctor" && pass=="doctor" ){
+			redirect3()
+		 } else {redirect()}
+		}    
+		
+		function redirect1(){location.replace("../admin/admin_home.html")}
+		function redirect2(){location.replace("../patient/patient_home.html")} 
+		function redirect3(){location.replace("../doctor/doctor_home.html")}       
+  </script>
+</head>
+<body>
+	<div class="container" id="container">
+		<div class="form-container log-in-container forms">
+			
+			<h1>Login</h1>
+		
+			<input id="userid" type="text" placeholder="User ID" />
+			<input id="password" type="password" placeholder="Password" />
+			<a href="../doctor/doctor_home.html">Forgot your password?</a>
+			<button  type="submit"  onClick="Redirect()">Log In</button>
+	</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<div class="d-flex align-items-center"> 
+						<a href="#" class="box me-2 selection"><i class="material-icons" style="font-size:36px;">supervisor_account</i>
+						<p class="profile">Admin</p>
+					</a> <a href="#" class="box me-2"><i class="material-icons" style="font-size:36px;">account_circle</i>
+						<p class="profile">Patient</p>
+					</a> <a href="#" class="box"><i class="material-icons" style="font-size:36px;">local_hospital</i>
+						<p class="profile">Doctor</p>
+					</a> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="patient.css" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <title>Contact</title>
+ </head>
+ <body style="background-image: url('2.gif'); background-size: cover">
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo"><i class="material-icons" style="font-size:36px;">medication</i>&nbsp;  Patient</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="Patient_med.html">Medicines</a></li>
+         <li><a href="patient_doc.html">Doctors</a></li>
+         <li class="services">
+            <a href="patient_pay_rooms.html">Payments</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="patient_pay_rooms.html">Rooms </a></li>
+              <li><a href="patient_pay_medicalfee.html">Medical Fee</a></li>
+              <li><a href="patient_pay_doctorfee.html">Doctor Fee</a></li>
+            </ul>
+         <li><a href="patient_contact.html">Contact</a></li>
+   </nav><br>
+   <div class="form-container" >
+        <h3>Contact Info</h3><br>
+    <form action="/action_page.php">
+      <label for="pno">Contact No(Patient) : </label>
+      <input type="text" id="pno" name="pno" value="Patient's Ph no.."><br>
+      <label for="v1">Contact No(Visitor 1) : </label>
+      <input type="text" id="v1" name="v1" value="Visitor 1's Ph no..."><br>
+      <label for="v2">Contact No(Visitor 2) : </label>
+      <input type="text" id="v2" name="v2" value="Visitor 2's Ph no..."><br>
+      <label for="v3">Contact No(Visitor 3) : </label>
+      <input type="text" id="v3" name="v3" value="Visitor 3's Ph no..."><br>
+      <a href="end.html"><input type="button" value="Submit"></a>
+    </form> 
+   </div>
+ </body>
+</html>
